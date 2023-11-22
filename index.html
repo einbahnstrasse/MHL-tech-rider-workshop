@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Digital Collaboration</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<!-- <link rel="stylesheet" href="dist/theme/black.css"> -->
+		<link rel="stylesheet" href="dist/theme/lg.intro.slides.v01.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<!-- <link rel="stylesheet" href="plugin/highlight/monokai.css"> -->
+		<link rel="stylesheet" href="plugin/highlight/vs.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<svg > 
+						<symbol id="s-text">
+							<text text-anchor="middle" x="50%" y="80%">Tech Riders</text>
+							<text text-anchor="middle" x="51%" y="81%">Tech Riders</text>
+						</symbol>
+						<g class = "g-ants">
+							<use xlink:href="#s-text" class="text-copy"></use>
+							<use xlink:href="#s-text" class="text-copy"></use>
+							<use xlink:href="#s-text" class="text-copy"></use>
+							<use xlink:href="#s-text" class="text-copy"></use>
+							<use xlink:href="#s-text" class="text-copy"></use>
+						</g>
+					</svg>
+					<h5 style="position:absolute;right:10px;" class="fade-in-text">Digital Collaboration at MHL — Louis Goldford (2023)</h5>
+				</section>
+
+				<section data-auto-animate>
+					<h5 style="text-align: left;">These slides will discuss:</h5>
+				</section>
+				<section data-auto-animate>
+					<h5 style="text-align: left;">These slides will discuss:</h5>
+					<div style="font-size: 0.65em; text-align: left;" data-auto-animate-id="list">
+						<h6>What is MIDI?</h6>
+						<h6 class="fragment">Software + Hardware</h6>
+						<h6 class="fragment">The MIDI Technical Standard</h6>
+						<h6 class="fragment">MIDI For the Future</h6>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h5 style="text-align: left;">These slides will discuss:</h5>
+					<div style="font-size: 0.65em; text-align: left;" data-auto-animate-id="list">
+						<h6>What is MIDI?</h6>
+							<ul>
+								<li>MIDI Definition + Use Cases</li>
+								<li>MIDI History</li>
+							</ul>
+						<h6>Software + Hardware</h6>
+							<ul>
+								<li>Cables, Connectors, and MIDI Controllers</li>
+								<li>Using MIDI in a Sequencer</li>
+							</ul>
+						<h6>The MIDI Technical Standard</h6>
+							<ul>
+								<li>"Note-On," "Note-Off," and Other Messages</li>
+								<li>Program Change + Control Change Messages</li>
+								<li>MIDI File Formats + Sound Banks</li>
+							</ul>
+
+						<h6>MIDI For the Future</h6>
+							<ul>
+								<li>Expressive New MIDI Controllers</li>
+								<li>MPE (MIDI Polyphonic Expression)</li>
+								<li>MIDI Over USB, TRS, Ethernet, Wireless</li>
+							</ul>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+					</div>
+					<div class="special-body">
+						<p class="fragment">As composers and musical creators, <br>we labor to make our artistic intentions <b>logical</b> and <b>intelligible</b><br>to those we make music with.</p>
+						<p class="fragment">For example, we notate performance directions in a <b>score</b>.</p>
+
+						<p class="fragment">But this process does not stop <br>with <b>performers</b> realizing our vision...</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+					</div>
+					<div class="special-body">
+						<p>If you produce works using musical and visual <b>technology</b>,</p>
+						<p class="fragment">and if you <b>request assistance</b> from skilled experts,</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+					</div>
+					<div class="special-body">
+						<h6>You must <span style="color: blue;">clearly communicate</span> your vision <br>as a member of an <span style="color: blue;">artistic team</span>.</h6>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+					</div>
+					<div class="special-body">
+						<p>Just like the performers in your orchestra,</p>
+						<p class="fragment">these skilled experts <b>are your collaborators</b>.</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Who are your Digital Collaborators?</h4>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Who are your Digital Collaborators?</h4>
+					</div>
+					<div class="special-body">
+						<ul>
+							<li class="fragment"><b>FOH</b>: <em>Front-of-House Staff</em></li>
+							<li class="fragment"><b>Tonmeister</b></li>
+							<li class="fragment"><b>Live Sound Engineer</b></li>
+							<li class="fragment"><b>Computer Music Assistant (RIM)</b>, "Electronics Assistant"</li>
+							<li class="fragment"><b>Lighting Designer</b></li>
+							<li class="fragment"><b>Stage Manager</b></li>
+							<li class="fragment"><b>Stage Hands</b> who move and position elements on the stage for you</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Who AREN'T your Digital Collaborators?</h4>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Who AREN'T your Digital Collaborators?</h4>
+						<img data-src="img/mind.reader.png" width="55%" class="fade-in-text" alt="mind.reader.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 51vh;">
+						<p>Your collaborators are not <b>mind readers</b>.</p>
+						<p class="fragment">They do not <b>guess</b> what your vision is.</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Who AREN'T your Digital Collaborators?</h4>
+						<img data-src="img/magician.png" width="35%" class="fade-in-text" alt="magician.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 51vh;">
+						<p>Your collaborators are not <b>magicians</b>.</p>
+						<p class="fragment">They do not produce instant solutions from very little or no guidance.</p>
+					</div>
+				</section>
+
+				<section>
+					<h5>They are <span style="color: blue;">performing</span> alongside you...</h5>
+					<h5 class="fragment">They are on your <span style="color: blue;">team</span>...</h5>
+				</section>
+
+
+
+
+
+
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+						<img data-src="img/audio_mixing_board_with_hands.png" width="35%" class="fade-in-text" alt="audio_mixing_board_with_hands" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 51vh;">
+						<p>When you ask someone to adjust your volume,</p>
+						<p class="fragment">or move a microphone on stage,</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+						<img data-src="img/lighting.designer.png" width="55%" class="fade-in-text" alt="lighting.designer.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 45vh;">
+						<p>or give you more light from the booth,</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+						<img data-src="img/max.patch.v01.png" width="55%" class="fade-in-text" alt="max.patch.v01.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 50vh;">
+						<p>or operate your Max patch,</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+						<img data-src="img/handshake.png" width="55%" class="fade-in-text" alt="handshake.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 40vh;">
+						<p>they become your <b>collaborators</b>.</p>
+						<p class="fragment">They become members of your performance <b>team</b>.</p>
+						<p class="fragment">They are <b>performing</b> your piece in real-time</p>
+						<p class="fragment">along with your team of musicians on stage.</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Curtain Call Etiquette</h4>
+						<img data-src="img/curtain.call.png" width="45%" class="fade-in-text" alt="curtain.call.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 46vh;">
+						<p>When you <b>take a bow</b> after a performance,</p>
+						<p class="fragment">Motion to the <b>lighting booth</b>,</p>
+						<p class="fragment">and motion to the <b>mixing desk</b></p>
+						<p class="fragment">to acknowledge these "hidden" performers!</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+						<!-- <img data-src="img/handshake.png" width="55%" class="fade-in-text" alt="handshake.png" style="position: relative; top: 2vh;"> -->
+					</div>
+					<div class="special-body">
+						<p>As your <b>team members</b>,</p>
+						<p class="fragment">they need a <b>clear representation of your vision</b></p>
+						<p class="fragment">in order to bring their <b>expertise</b> <br>to the realization of your piece:</p>
+						<p class="fragment">They need to be <b>creatively engaged</b>, <br>just like your stage performers!</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is Digital Collaboration?</h4>
+					</div>
+					<div class="special-body">
+						<h4>How do we <span style="color: blue;">creatively engage</span> our digital collaborators?</h4>
+						<h4 class="fragment">How do we <span style="color: blue;">notate our artistic vision</span> for them?</h4>
+						<p class="fragment">At MHL, we use 3 documents:</p>
+						<ul>
+							<li class="fragment"><b>Tech Rider</b></li>
+							<li class="fragment"><b>Call Sheet</b></li>
+							<li class="fragment"><b>Equipment Request Form</b></li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>What is a Tech Rider?</h2>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is a Tech Rider?</h4>
+					</div>
+					<div class="special-body">
+						<p class="fragment">A tech rider (<em>technical rider</em>) is a document that contains all the information needed to assist you with a performance...</p>
+						<p class="fragment">all the technical details that an artistic team needs <br>to realize your creative vision.</p>
+						<p class="fragment">As a <b>professional musician</b>, you must share a tech rider with the <br>FOH (front-of-house staff) at your performance venue.</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>What is included in a Tech Rider?</h4>
+					</div>
+					<div class="special-body">
+						<ul>
+							<li class="fragment">a written <b>overview</b> of the performance situation</li>
+							<li class="fragment">a <b>stage plot</b> (drawing) with the position of performers, microphones, loudspeakers, and other elements arranged in the performance space</li>
+							<li class="fragment">an <b>audio connection matrix</b> : a diagram detailing the how your equipment is <b>routed</b> to the house's mixing board and loudspeakers</li>
+							<li class="fragment">details about <b>lighting</b> and <b>dramaturgy</b>, if necessary</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Who Needs to Submit a Tech Rider?</h4>
+					</div>
+					<div class="special-body">
+						<p class="fragment">Any <b>student</b> or <b>faculty member</b> requesting <br>technical assistance for an MHL performance.</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Who Should I Submit a Tech Rider to?</h4>
+					</div>
+					<div class="special-body">
+						<p class="fragment">For MHL performances involving Digitale Kreation, <br>send your tech rider to Dr. Louis Goldford, <br><em>Technical Director of Digitale Kreation</em>:</p>
+						<h6 class="fragment">Louis.Goldford@mh-luebeck.de</h6>
+					</div>
+				</section>
+				
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>When Should I Submit a Tech Rider?</h4>
+						<img data-src="img/tech.rider.timeline.png" width="55%" class="fade-in-text" alt="tech.rider.timeline.png" style="position: relative; top: 2vh;">
+					</div>
+					<!-- <div class="special-body">
+					</div> -->
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>When Should I Submit a Tech Rider?</h4>
+						<!-- <img data-src="img/tech.rider.timeline.png" width="55%" class="fade-in-text" alt="tech.rider.timeline.png" style="position: relative; top: 2vh;"> -->
+					</div>
+					<div class="special-body">
+						<p class="fragment">Submit in advance according to the timeline on the previous slide, to ensure that we can assist you, and so everybody's questions get answered.</p>
+						<p class="fragment">We need time to be sure we can do what you are asking.</p>
+						<p class="fragment">We need time to answer essential questions and find solutions to problems,<br>such as equipment we do not have...</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>When Should I Submit a Tech Rider?</h4>
+					</div>
+					<div class="special-body">
+						<h6><span style="color: red;">Without this timely critical information, <br>the studio simply cannot guarantee technical support.</span></h6>
+						<h6 class="fragment"><span style="color: red;">Last-minute changes or additions are the responsibility of each composer or presenter.</span></h6>
+					</div>
+				</section>
+
+				<section>
+					<h2>How Do I Submit a Tech Rider?</h2>
+				</section>
+
+				<section>
+					<h2>Answer: <br>The MHL Tech Rider Template</h2>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>How Do I Submit a Tech Rider?</h4>
+						<img data-src="img/template.qr.png" width="65%" class="fade-in-text" alt="template.qr.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 51vh;">
+						<p>Bookmark our MHL Tech Rider <b>Template</b>, here as a <b>draw.io</b> document that you can edit yourself online!</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Link to draw.io template:</h4>
+						<img data-src="img/template.qr.png" width="65%" class="fade-in-text" alt="template.qr.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 51vh;">
+						<a href="https://drive.google.com/file/d/1-GlTgMd1z7WU59gmHqfyYgg-RvwvP2Vh/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1-GlTgMd1z7WU59gmHqfyYgg-RvwvP2Vh/view?usp=sharing</a>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>How Do I Submit a Tech Rider?</h4>
+						<img data-src="img/template.pdf.qr.png" width="65%" class="fade-in-text" alt="template.pdf.qr.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 51vh;">
+						<p>Or bookmark our MHL Tech Rider <b>Template</b>, here as a <b>PDF</b> document that you can draw on using a program on your computer, iPad, etc.</p>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Link to PDF template:</h4>
+						<img data-src="img/template.pdf.qr.png" width="65%" class="fade-in-text" alt="template.pdf.qr.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 51vh;">
+						<a href="https://drive.google.com/file/d/1qSDk5n4pOZWnoo5Jj_9UEYvdXekN65xx/view" target="_blank">https://drive.google.com/file/d/1qSDk5n4pOZWnoo5Jj_9UEYvdXekN65xx/view</a>
+					</div>
+				</section>
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4>Link in Discord Server</h4>
+						<img data-src="img/discord.links.png" width="35%" class="fade-in-text" alt="discord.links.png" style="position: relative; top: 2vh;">
+					</div>
+					<div style="position: relative; top: 51vh;">
+						<p>You can also find the template in our MHL Digitale Kreation Discord Server. <br>Send me an email for an invitation to the server!</p>
+					</div>
+				</section>
+
+
+				
+
+
+
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header" style="font-size: smaller;">
+						<h4></h4>
+					</div>
+					<div class="special-body">
+						<h6>That's the end!</h6>
+						<p>
+							We hope you learned something useful<br>to use in your artistic practice!
+						</p>				
+					</div>
+				</section>
+			
+
+
+
+
+
+				<!-- <section data-background-video="https://youtu.be/cWaO9wS389I" data-background-video-loop data-background-video-muted>
+					<h2>Video</h2>
+				</section> -->
+
+
+
+
+
+				
+				<!-- <section>
+					<div id="hidden" style="display:none;">
+						<div id="header">
+							<div id="header-left">HEADER-LEFT</div>
+							<div id="header-right">HEADER-RIGHT</div>
+							<div id="footer-left">FOOTER-LEFT</div>
+						</div>
+					</div>
+				</section> -->
+
+
+
+			</div>
+		</div>
+
+		<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+			// 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+			var header = $('#header').html();
+			if ( window.location.search.match( /print-pdf/gi ) ) {
+				Reveal.addEventListener( 'ready', function( event ) {
+					$('.slide-background').append(header);
+				});
+			}
+			else {
+				$('div.reveal').append(header);
+		   }
+		</script> -->
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				progress: true,
+				slideNumber: "c/t",
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
